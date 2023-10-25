@@ -11,9 +11,14 @@
 	<groupId>pl.dsyou</groupId>
 	<artifactId>template</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>template</name>
+    <packaging>pom</packaging>
+    <name>template</name>
 	<description>Backend template project</description>
-	<properties>
+    <modules>
+        <module>core</module>
+		<module>common</module>
+	</modules>
+    <properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
