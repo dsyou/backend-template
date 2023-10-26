@@ -1,4 +1,4 @@
 package pl.dsyou.domaindrivendesign.annotation;
 
-public @interface DomainReposting {
+public @interface DomainRepository {
 }
