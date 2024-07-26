@@ -23,9 +23,9 @@ public class AuditEventWriter {
 
     private String createInsert(AuditEvent auditEvent) {
         String tableName = "AUDIT_" + auditEvent.getTableName();
-        return "INSERT INTO" +
+        return "INSERT INTO " +
                 tableName +
-                "(AGGREGATE_CLASS_NAME, AGGREGATE_UUID, COMMAND_CLASS_NAME, COMMAND_JSON)" +
-                " VALUES (?, ?, ?, ?)";
+                "(AGGREGATE_CLASS_NAME, AGGREGATE_UUID, COMMAND_CLASS_NAME, COMMAND_JSON) " +
+                "VALUES (?, ?, ?, ?)";
     }
 }
